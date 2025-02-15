@@ -1,0 +1,52 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.supercal.hackathon.grpc.proto";
+
+package betting;
+
+service AccountService {
+  rpc balanceUpdate (stream BalanceUpdateRequestBatch) returns (stream BalanceUpdateResponseBatch);
+}
+
+message BalanceUpdateRequestBatch {
+  uint32 batchId = 1;
+  uint32 partition = 2;
+  repeated BalanceUpdateRequest request = 3;
+}
+
+message BalanceUpdateRequest {
+  uint64 transactionId = 1;
+  uint32 accountId = 2;
+  uint32 amount = 3;
+  Action action = 4;
+}
+
+message BalanceUpdateResponseBatch {
+  uint32 batchId = 1;
+  uint32 partition = 2;
+  bool batchCompleted = 3;
+  bool batchError = 4;
+  repeated BalanceUpdateResponse response = 5;
+}
+
+message BalanceUpdateResponse {
+  uint64 transactionId = 1;
+  uint32 balance = 2;
+  OperationStatus status = 3;
+}
+
+enum Action {
+  ACTION_DEBIT = 0; // withdrawal or expense
+  ACTION_CREDIT = 1; // deposit or income
+}
+
+enum OperationStatus {
+  OPERATION_STATUS_UNSPECIFIED = 0;
+  OPERATION_STATUS_SUCCESS = 1;
+  OPERATION_STATUS_INSUFFICIENT_FUNDS = 2;
+  OPERATION_STATUS_INVALID_AMOUNT = 3;
+  OPERATION_STATUS_ACCOUNT_NOT_FOUND = 4;
+  OPERATION_STATUS_FAILED = 5;
+  OPERATION_STATUS_DUPLICATE_TRANSACTION = 6;
+}

@@ -1,0 +1,16 @@
+docker run -d \
+  --name redis-server \
+  -p 6379:6379 \
+  --ulimit nofile=100000:100000 \
+  --memory=8g \
+  --cpus=8 \
+  redis:latest \
+  redis-server \
+  --maxclients 10000 \
+  --maxmemory 8gb \
+  --appendonly no \
+  --save "" \
+  --tcp-backlog 511 \
+  --notify-keyspace-events "Egx" \
+  --hz 10 \
+  --databases 16

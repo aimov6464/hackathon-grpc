@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f374c61b-9073-4430-8d8f-b85a066e83eb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/hackathon-grpc/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/hackathon-grpc/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +33,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/kozha/Downloads/hackathon-grpc",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }

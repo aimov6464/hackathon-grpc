@@ -2,7 +2,7 @@
 
 📄 License: [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 🚫 Commercial use is strictly forbidden.
-✍️ All rights reserved by Raim Beketov, 2025.
+✍️ All rights reserved by Raimbek Beketov, 2025.
 
 This project was created and maintained for educational and demonstration purposes only. Any unauthorized use, reproduction, or distribution for commercial gain will be considered a violation.
 

@@ -1,6 +1,8 @@
 # High-Performance Balance Management Service
 ![CI](https://github.com/aimov6464/hackathon-grpc/actions/workflows/main.yml/badge.svg)
 
+Java 21 · Maven · gRPC · RocksDB · Speedb
+
 **gRPC + RocksDB**
 
 This repository contains a **high-performance, stateful backend service** designed for **balance and ledger processing** in real-time, distributed systems.

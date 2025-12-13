@@ -99,6 +99,26 @@ This service can be used as a backend component for:
 - Financial or gaming platforms requiring strict correctness guarantees
 
 ---
+## Quickstart
+
+### Requirements
+- Java **21**
+- Maven **3.9+**
+
+### Build (multi-module)
+```bash
+mvn -B -ntp clean package
+```
+
+### Run Server
+```bash
+java -jar grpc-server/target/grpc-server-1.0-SNAPSHOT.jar
+```
+### Run Client
+```bash
+java -jar grpc-client/target/grpc-client-1.0-SNAPSHOT.jar
+```
+
 
 ## Status
 

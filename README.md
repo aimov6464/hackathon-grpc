@@ -1,5 +1,5 @@
 # High-Performance Balance Management Service
-![CI](https://github.com/aimov6464/hackathon-grpc/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/aimov6464/hackathon-grpc/actions/workflows/main.yml/badge.svg)
 
 **gRPC + RocksDB**
 

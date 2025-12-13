@@ -1,4 +1,6 @@
-# High-Performance Balance Management Service  
+# High-Performance Balance Management Service
+![CI](../../actions/workflows/ci.yml/badge.svg)
+
 **gRPC + RocksDB**
 
 This repository contains a **high-performance, stateful backend service** designed for **balance and ledger processing** in real-time, distributed systems.

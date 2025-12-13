@@ -18,5 +18,7 @@ jobs:
           java-version: "21"
           cache: maven
 
-      - name: Build & Test
+      - name: Build
         run: mvn -B -ntp clean verify
+        working-directory: ./hackathon-grpc
+

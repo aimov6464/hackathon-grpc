@@ -27,7 +27,7 @@ This project represents a **production-inspired reference implementation** of ar
 
 ## Architecture Overview
 
-The service is designed as a **standalone platform component**, decoupled from domain-specific logic (e.g. games or UI).
+The service is designed as a **standalone platform component**, decoupled from domain-specific business logic and UI.
 
 High-level architecture:
 
@@ -100,7 +100,7 @@ This service can be used as a backend component for:
 - Balance and ledger management
 - Transaction processing
 - High-throughput state mutation services
-- Financial or gaming platforms requiring strict correctness guarantees
+- Financial and consumer platforms requiring strict correctness guarantees
 
 ---
 ## Quickstart
